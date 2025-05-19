@@ -23,6 +23,11 @@ class UserSeeder extends Seeder
             'email' => 'operator@tracerstudy.id'
         ]);
 
+        User::factory()->alumni()->create([
+            'name' => 'Fulan Bin Fulan',
+            'email' => 'fulan@tracerstudy.id'
+        ]);
+
         User::factory(10)->alumni()->withBiodata()->create();
     }
 }
